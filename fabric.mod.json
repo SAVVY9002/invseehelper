@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "invseehelper",
+  "version": "${version}",
+  "name": "InvSee Helper",
+  "description": "Open /invsee quickly by sneaking + right-clicking a player.",
+  "authors": ["Jannes"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.jannes.invseehelper.InvSeeHelperClient"
+    ]
+  },
+  "mixins": [
+    "invseehelper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "fabric-api": "*"
+  }
+}
